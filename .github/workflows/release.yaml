@@ -8,8 +8,6 @@ on:
 jobs:
   release-cli:
     runs-on: ubuntu-latest
-    outputs:
-      version: ${{ steps.bump-version.outputs.tag }}
     steps:
       - uses: actions/checkout@v2
         with:
